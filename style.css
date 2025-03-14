@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4F4;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    background-color: #333333;
+    justify-content: center;
+    width: 100%;
+    height: 71px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #F4F4F4;
+    width: 1300px;
+    height: 71px;
+}
+
+.logo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 200;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF6F61;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    list-style-type: none;
+    width: 40%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #F4F4F4;
+    font-family: Laila;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4F4F4;
+    transition: 0.3s;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    height: 50%;
+    width: 42%;
+    padding: 0 32px;
+    transition: 0.3s;
+    margin-top: 130px;
+    
+}
+
+.hero-text h2 {
+    color: #333333;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color:#333333;
+}
+
+.hero-text h1 {
+    color: #333333;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #FF6F61;
+    background: linear-gradient(90deg, #FF6F61 0%, #FFD166 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    -webkit-text-stroke:1px#333333 ;
+}
+
+.hero-text p {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: laila;
+    text-align: center;
+}
+.hero-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    height: 40%;
+    width: 100%;
+    padding: 100 32px;
+    margin-top: 50px;
+}
+
+.Tilgjengelige h2 {
+    color: #333333;
+    font-size: 40px;
+    font-family:"Laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #333333;
+   
+}
+
+.kunstformer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color:transparent;
+    width: 100%;
+    padding: 0 300px;
+}
+
+.kunstform img:hover {
+   scale: 1.05;
+   
+    transition: 0.2s;
+}
+
+input {
+    width: 540px;
+    height: 41px;
+    border-radius: 17px;
+    border: none;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-family: "Laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    font-family: Laila;
+    font-size: 16px;
+    color: #F4F4F4;
+}
+.checkbox-container input {
+    display: none;
+}
+.checkbox-container label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.checkbox-container label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #06D6A0;
+    background-color: white;
+    border-radius: 50%;
+}
+.checkbox-container input:checked + label::before {
+    background-color: #06D6A0;
+    border: 2px solid #06D6A0;
+}
+.checkbox-container input:checked + label::after {
+    content: "✔";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+
+}
+.form-container button {
+    background-color: #FFD166;
+    color: #333333;
+    font-size: 16px;
+    font-family: "Laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+    width: 123px;
+    height: 41px;
+    border-radius: 17px;
+    transition: 0.3s;
+    margin: 16 0px;
+}
+
+.tilbud {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    background-color: transparent;
+    height: 1350px;
+    transition: 0.3s;
+    margin-bottom: 64;
+}
+
+.tilbudpage h2 {
+    color: #333333;
+    font-size: 40px;
+    font-family: "Laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 32px;
+    margin-top: 135px;
+}
+
+
+.card-container {
+    display: flex;
+    background-color: #333333;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 310px;
+    width: 1213px;
+    align-content: center;
+    padding: 0 32px;
+    border-radius: 17px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+h3 {
+    color: #06d6a0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-header p {
+    color: #F4F4F4;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color:transparent;
+    width: 400px;
+    
+    background-color: transparent;
+
+    
+
+}
+
+.card-img {
+    margin-right: 16px;
+}
+
+
+
+.card-body p {
+    max-width: 363px;
+    max-height: fit-content;
+    font-size: 16px;
+    color: #F4F4F4;
+    font-family: "Laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 16 0px;
+}
+button {
+    background-color: #FFD166;
+    color: #333333;
+    font-size: 16px;
+    font-family: "Laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+    width: 123px;
+    height: 41px;
+    border-radius: 17px;
+    transition: 0.3s;
+    margin: 16 0px;
+   
+}
+
+.venstre {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    height: 310px;
+
+}
+
+.form-container {
+    
+    background: #333333;
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+    padding: 300px 300px;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.form-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    width: 540px;
+    padding: 0;
+}
+
+.form-body img {
+    
+    border-radius: 17px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    background-color:transparent;
+    width: 540px;
+    padding: 0;
+    margin-bottom: 16px;
+    
+    
+    
+}
+
+.form-header  h2 {
+    color: #F4F4F4;
+    font-size: 40px;
+    font-family: "laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 32px;
+}
+ 
+.galleri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    width: 70%;
+    margin-bottom: 64px;
+}
+
+.galleri img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.galleri-header h2 {
+    color: #333333;
+    font-size: 40px;
+    font-family: "Laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 32px;
+    width: 100%;
+    margin-top: 125px;
+}
+
+.galleri-header {
+    width: 100%;
+    display: flex;
+    padding-left: 300px;
+}
+
+
+
+    
+
